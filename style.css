@@ -1,0 +1,191 @@
+/* ============================================================
+   TESTE — 3º TRIMESTRE — DESIGN DE INTERFACES DIGITAIS
+   Tema: Recap 2026
+   Valor total: 4,0 pontos
+
+   INSTRUÇÕES GERAIS
+   - Você tem liberdade para montar o HTML (index.html) do jeito que
+     preferir: a única exigência é que, ao final, existam 4 cards na
+     página (3 da Questão 1 + 1 da Questão 3). O cabeçalho
+     (.cabecalho) já está pronto, não precisa alterá-lo.
+   - Use o que você aprendeu durante o semestre: seletores, box
+     model (margin, padding, border), Flexbox, Grid, cores,
+     tipografia etc.
+   - As Questões 4, 5 e 6 são respondidas em texto, como comentário
+     neste próprio arquivo CSS, logo abaixo do enunciado de cada uma
+     — não no HTML.
+   - Não existe uma única forma "certa" de resolver cada questão —
+     o importante é que as técnicas pedidas apareçam no seu CSS, e
+     que as justificativas (Questões 4, 5 e 6) realmente expliquem as
+     escolhas que você fez nas questões anteriores.
+   - O teste não será avaliado caso sejam identificadas consultas ou
+     cópias não autorizadas.
+  ============================================================ */
+
+
+/* ==========================================================================
+   RESET E CABEÇALHO — já está pronto, não precisa mexer aqui
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #f4f4f4;
+  line-height: 1.5;
+}
+
+.cabecalho {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+.cabecalho p {
+  color: #9ca3af;
+}
+
+.conteudo {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+
+
+/* ==========================================================================
+   QUESTÃO 1 (1,5 pt) — 3 CARDS COM MOMENTOS DE 2026
+
+   Crie 3 "cards" (pode usar <div>, <article>, <section> — a escolha
+   é sua, dentro de .conteudo no index.html), cada um representando
+   um momento de 2026 que você quer lembrar. Pode ser qualquer coisa:
+   uma viagem, uma conquista, um aprendizado, um evento marcante — o
+   conteúdo é livre.
+
+   Cada card precisa ter, no mínimo, um título e um texto curto
+   contando o momento.
+
+   No CSS, use o que você aprendeu na disciplina este semestre. O seu
+   código precisa demonstrar, pelo menos:
+   a) Flexbox OU CSS Grid para organizar os 3 cards lado a lado (ou
+      para organizar o conteúdo dentro de cada card — vale usar nos
+      dois lugares também);
+   b) margin e/ou padding para espaçar os cards e o conteúdo interno;
+   c) border (ou border-radius) delimitando visualmente cada card;
+   d) cores (background-color, color) escolhidas por você;
+   e) uma escolha de fonte (font-family) e de formatação de texto
+      (font-size, font-weight, letter-spacing, line-height etc.)
+      para o título e o texto dos cards — a fonte não precisa ser a
+      mesma usada no cabeçalho.
+
+   As escolhas de cor e de tipografia feitas aqui são o que você vai
+   justificar nas Questões 4, 5 e 6.
+   ========================================================================== */
+
+
+div{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 800px;
+   margin: 40px auto;
+   font: 300 100% 'roboto' sans-serif;
+   text-align: center;
+   color: chocolate;
+   margin: 10;
+   padding: 10;
+   box-sizing: border-box;
+}
+
+/* ==========================================================================
+   QUESTÃO 2 (0,5 pt) — ANIMAÇÃO COM TRANSFORM
+
+   Adicione uma animação aos cards usando a propriedade transform.
+
+   Pode ser, por exemplo, um efeito ao passar o mouse (:hover) que
+   aumenta o card (scale), inclina (rotate) ou desloca (translate) —
+   combinado com transition para o efeito ficar suave. Também vale
+   usar @keyframes com transform para uma animação automática, que
+   roda sozinha.
+
+   O importante é que a propriedade transform esteja realmente sendo
+   usada para animar algum aspecto dos cards.
+   ========================================================================== */
+
+/* sua resposta aqui */
+
+
+/* ==========================================================================
+   QUESTÃO 3 (0,5 pt) — CARD "MEU CONTEÚDO FAVORITO"
+
+   Crie mais um card — o 4º da página — seguindo o mesmo estilo
+   visual dos outros três (pode reaproveitar as mesmas classes/regras
+   de CSS que você já escreveu). Neste card, em vez de um momento de
+   2026, conte:
+
+   a) qual conteúdo da disciplina de Design de Interfaces Digitais
+      você mais gostou de aprender neste semestre;
+   b) uma explicação, com suas próprias palavras, de como esse
+      conteúdo funciona;
+   c) um exemplo desse conteúdo (pode ser uma descrição, um pequeno
+      trecho de código ou qualquer outra forma de representar o
+      exemplo dentro do card).
+   ========================================================================== */
+
+/* sua resposta aqui */
+
+
+/* ==========================================================================
+   QUESTÃO 4 (0,5 pt) — JUSTIFICATIVA: PSICOLOGIA DAS CORES
+
+   Escreva, como comentário logo abaixo, um texto explicando por que
+   você escolheu as cores que usou nos cards da Questão 1.
+
+   Relacione sua escolha com a psicologia das cores: o que cada cor
+   comunica ou transmite (ex.: calma, energia, confiança, nostalgia),
+   e por que isso combina com o objetivo da interface.
+   Esta questão é avaliada pelo texto da sua justificativa, não pelo
+   restante do CSS.
+   ========================================================================== */
+
+/* sua resposta aqui */
+
+
+/* ==========================================================================
+   QUESTÃO 5 (0,5 pt) — JUSTIFICATIVA: ESQUEMA DE CORES
+
+   Escreva, como comentário logo abaixo, qual esquema de cores você
+   utilizou nos cards da Questão 1: monocromático, análogo ou
+   complementar.
+
+   Explique como esse esquema foi aplicado — quais cores específicas
+   você usou e como elas se relacionam entre si na roda de cores, de
+   acordo com o esquema escolhido. Esta questão também é avaliada
+   pelo texto da sua justificativa, não pelo restante do CSS.
+   ========================================================================== */
+
+/* sua resposta aqui */
+
+
+/* ==========================================================================
+   QUESTÃO 6 (0,5 pt) — JUSTIFICATIVA: TIPOGRAFIA
+
+   Escreva, como comentário logo abaixo, uma explicação de por que
+   você escolheu a fonte e a formatação de texto da Questão 1
+   (item e).
+
+   Fale sobre o que essa tipografia comunica (ex.: formalidade,
+   descontração, modernidade) e por que ela combina com a proposta
+   dos seus cards. Esta questão também é avaliada pelo texto da sua
+   justificativa, não pelo restante do CSS.
+   ========================================================================== */
+
+/* sua resposta aqui */
